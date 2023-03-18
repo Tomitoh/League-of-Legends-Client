@@ -1,0 +1,375 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color: #2C3333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.client{
+    width: 90%;
+    height: 600px;
+    margin: 20px;
+    display: flex;
+    position: relative;
+}
+
+.img-container{
+    width: 100%;
+    height: 100%;
+}
+
+.img-container img{
+    width: 100%;
+    height: 100%;
+    user-select: none;
+}
+
+.region{
+    display: flex;
+    justify-content: center;
+}
+
+.region .logo{
+    width: 80px;
+    height: 30px;
+    user-select: none;
+}
+
+.form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 500px;
+    background-color: white;
+}
+
+.titulo{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    user-select: none;
+    font-size: 12px;
+}
+
+.content-container{
+    margin: 40px;
+}
+
+.form-container .content-container .inputs input[type="text"]{
+    width: 100%;
+    background-color: #EEEEEE;
+    border: none;
+    height: 30px;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 2px;
+    transition: background-color .1s linear;
+    outline: none;
+    user-select: none;
+} .form-container .content-container .inputs input[type="text"]:focus{
+    outline: 2px solid black;
+    background-color: white;
+}
+
+.form-container .content-container .inputs input[type="password"]{
+    width: 100%;
+    background-color: #EEEEEE;
+    border: none;
+    height: 30px;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 2px;
+    transition: background-color .1s linear;
+    outline: none;
+    user-select: none;
+} .form-container .content-container .inputs input[type="password"]:focus{
+    outline: 2px solid black;
+    background-color: white;
+}
+
+.inputs{
+    width: 90%;
+}
+
+.inputs .recordar input[type="checkbox"] {
+    appearance: none;
+    background-color: #EEEEEE;
+    border: none;
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+    border-radius: 2px;
+    transition: .3s ease all;
+    cursor: pointer;
+}
+
+.inputs .recordar input[type="checkbox"]:checked {
+    background-color: #B82F36;
+    border-radius: 50%;
+} 
+
+.inputs .contraseña input[type="checkbox"] {
+    appearance: none;
+    background-color: #EEEEEE;
+    border: 2px solid black;
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+    border-radius: 50%;
+    transition: .3s ease all;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 1%;
+}
+
+.inputs .contraseña input[type="checkbox"]:checked {
+    background-color: black;
+    border-radius: 50%;
+} 
+
+.showPassword{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    user-select: none;
+}
+
+.contraseña{
+    position: relative;
+}
+
+.recordar{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.recordar span{
+    margin-left: 10px;
+    font-size: 11px;
+    color: black;
+    font-weight: bold;
+    user-select: none;
+    opacity: 80%;
+}
+
+.footer{
+    margin-top: 40px;
+    font-size: 10px;
+    position: relative;
+    width: 100%;
+    height: 50px;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 22%;
+}
+
+.links a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #8D8D8D;
+    user-select: none;
+    font-weight: bold;
+} .links a:hover{
+    color: black;
+}
+
+.version{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #8D8D8D;
+    cursor: default;
+    user-select: none;
+}
+
+.inputs .aceptar{
+    width: 80px;
+    height: 80px;
+    border-radius: 40%;
+    border: 3px solid #EAEAEA;
+    background-color: transparent;
+    transition: .2s ease all;
+    cursor: pointer;
+} .inputs .aceptar:hover{
+    border-color: #B82F36;
+    background-color: #B82F36;
+}
+
+.inputs button svg path{
+   color: #EAEAEA;
+   stroke-width: 40px;
+   transition: .2s ease all;
+} .inputs .aceptar:hover svg path{
+    color: white;
+    animation-name: movimiento;
+   animation-duration: .8s;
+   animation-timing-function: ease;
+   animation-iteration-count: 1;
+} @keyframes movimiento{
+    0%{
+        transform: translatex(2px);
+    }
+
+    25%{
+        transform: translatex(-2px);
+    }
+
+    50%{
+        transform: translatex(2px);
+    }
+
+    75%{
+        transform: translatex(-2px);
+    }
+
+    100%{
+        transform: translatex(0px);
+    }
+}
+
+.center-btn{
+    display: flex;
+    justify-content: center;
+    width: 111%;
+
+    margin-top: 40px;
+}
+
+.log-btn{
+    display: flex;
+    justify-content: space-around;
+    gap: 5px;
+    margin-top: 20px;
+    width: 108%;
+}
+.log-btn .btn{
+    width: 60px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+
+} .log-btn .btn:hover{
+    outline: 1px solid #ccc;
+}
+
+.log-btn #facebook{
+    background-color: #4267B2;
+} .log-btn #facebook svg{
+    fill: white;
+}
+
+.log-btn #google{
+    background-color: white;
+    border: 1px solid #EEEEEE;
+} .log-btn #google img{
+    width: 16px;
+    height: 16px;
+}
+
+.log-btn #apple{
+    background-color: black;
+} .log-btn #apple svg{
+    fill: white;
+}
+
+.log-btn #xbox{
+    background-color: 	#107C10;
+} .log-btn #xbox svg{
+    fill: white;
+}
+
+.user-menu button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+}
+
+.user-menu{
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 0px 5px gray;
+    position: absolute;
+    border-radius: 18px;
+    top: 40px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+}
+
+.user-menu svg{
+    fill: white;
+    opacity: 0.6;
+    width: 30px;
+    height: 30px;
+    transition: .4s ease all;
+} .user-menu:hover svg{
+    opacity: .8;
+}
+
+.menu{
+    display: none;
+}
+
+.menu-active{
+    width: 220px;
+    background-color: #2C3333;
+    position: absolute;
+    right: 100px;
+    top: 40px;
+    padding: 20px;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    transition: .3s ease all;
+}
+
+
+.menu .btn-menu button{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    opacity: .6;
+    padding: 10px;
+    border-radius: 5px;
+} .menu-active .btn-menu button:hover{
+    background-color: rgba(255, 255, 255, 0.1);;
+}
